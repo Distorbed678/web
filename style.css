@@ -1,0 +1,72 @@
+:root {
+    --display-color: white;
+}
+
+html {
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    background-color: gray;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+
+    background-color: lightgray;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-height: 100%;
+}
+
+#clickPanel {
+    background-color: green;
+}
+
+#upgradePanel {
+    background-color: darkblue;
+}
+
+#mainButton {
+    margin-top: auto;  
+    margin-bottom: auto;
+}
+
+#scoreDisplay {
+    font-size: xx-large;
+    color: var(--display-color);
+}
+
+#upgradeCostDisplay {
+    font-size: x-large;
+    color: var(--display-color);
+}
+
+.upgradeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#clickUpgrade {
+    background-color:orange;
+}
