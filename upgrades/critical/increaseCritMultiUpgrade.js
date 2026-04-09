@@ -1,7 +1,7 @@
 import { Upgrade } from "../upgrade.js";
 import { gamestate } from "../../gamestate.js";
 
-export class AutoClickAmountUpgrade extends Upgrade {
+export class IncreaseCritMultiUpgrade extends Upgrade {
     constructor(upgradeContainerName, cost) {
         super(upgradeContainerName, cost);
     }
@@ -10,8 +10,8 @@ export class AutoClickAmountUpgrade extends Upgrade {
         if (gamestate.score >= this._upgradeCost) {
             gamestate.score -= this._upgradeCost;
 
-            gamestate.autoClickAmount += 1;
-            this._upgradeValueDisplay.innerHTML = `Auto Click Amount: ${gamestate.autoClickAmount}`;
+            gamestate.criticalMulti += 5;
+            this._upgradeValueDisplay.innerHTML = `Crit Multi: ${gamestate.criticalMulti}`;
 
             this._upgradeCost *= 2;
             this.updateCostDisplay()

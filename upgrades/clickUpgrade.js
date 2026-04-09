@@ -9,8 +9,12 @@ export class ClickUpgrade extends Upgrade {
     onClick() {
         if (gamestate.score >= this._upgradeCost) {
             gamestate.score -= this._upgradeCost;
+
             gamestate.incrementCount*=2;
+            this._upgradeValueDisplay.innerHTML = `Amount Per Click: ${gamestate.incrementCount}`;
+
             this._upgradeCost *= 2;
+            this.updateCostDisplay();
         }
     }
 }

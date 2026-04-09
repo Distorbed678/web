@@ -11,8 +11,10 @@ export class AutoClickDelayUpgrade extends Upgrade {
             gamestate.score -= this._upgradeCost;
 
             gamestate.autoClickDelay -= 0.05;
+            this._upgradeValueDisplay.innerHTML = `Auto Click Delay: ${gamestate.autoClickDelay}s`;
 
             this._upgradeCost *= 4;
+            this.updateCostDisplay()
         }
     }
 }

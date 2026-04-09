@@ -71,16 +71,22 @@ main {
     background-color:orange;
 }
 
-#autoClickUpgrades {
+#autoClickUpgradeContainer {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-#autoClickAmountUpgrade {
-    background-color: darkorange;
+.autoClickUpgrade {
+    background-color: yellow;
 }
 
-#autoClickDelayUpgrade {
-    background-color: yellow;
+#critUpgradeContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.critUpgrade {
+    background-color: greenyellow;
 }

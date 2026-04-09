@@ -3,5 +3,8 @@ export const gamestate = {
     incrementCount: 1,
 
     autoClickAmount: 0,
-    autoClickDelay: 1 // in seconds
+    autoClickDelay: 1, // in seconds
+
+    criticalChance: 1,
+    criticalMulti: 5
 };

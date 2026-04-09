@@ -20,15 +20,30 @@
             <div class="upgradeContainer" id="clickUpgrade">
                 <p class="UpgradeCostDisplay">Cost: 10</p>
                 <button class="UpgradeButton" type="button">Upgrade Click Amount</button>
+                <p class="upgradeValueDisplay">Amount Per Click: 1</p>
             </div>
-            <div id="autoClickUpgrades">
-                <div class="upgradeContainer" id="autoClickAmountUpgrade">
+            <div id="autoClickUpgradeContainer">
+                <div class="upgradeContainer autoClickUpgrade" id="autoClickAmountUpgrade">
                     <p class="UpgradeCostDisplay">Cost: 100</p>
                     <button class="UpgradeButton" type="button">Upgrade AutoClick Amount</button>
+                    <p class="upgradeValueDisplay">Auto Click Amount: 0</p>
                 </div>
-                <div class="upgradeContainer" id="autoClickDelayUpgrade">
-                    <p class="UpgradeCostDisplay">Cost: 1000</p>
+                <div class="upgradeContainer autoClickUpgrade" id="autoClickDelayUpgrade">
+                    <p class="UpgradeCostDisplay">Cost: 2500</p>
                     <button class="UpgradeButton" type="button">Decrease AutoClick Delay</button>
+                    <p class="upgradeValueDisplay">Auto Click delay: 1 s</p>
+                </div>
+            </div>
+            <div id="critUpgradeContainer">
+                <div class="upgradeContainer critUpgrade" id="increaseCritChanceUpgrade">
+                    <p class="UpgradeCostDisplay">Cost: 10000</p>
+                    <button class="UpgradeButton" type="button">Upgrade Crit Chance</button>
+                    <p class="upgradeValueDisplay">Crit Chance: 1</p>
+                </div>
+                <div class="upgradeContainer critUpgrade" id="increaseCritMultiUpgrade">
+                    <p class="UpgradeCostDisplay">Cost: 25000</p>
+                    <button class="UpgradeButton" type="button">Upgrade Crit Multi</button>
+                    <p class="upgradeValueDisplay">Crit Multi: 5</p>
                 </div>
             </div>
         </div>
