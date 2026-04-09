@@ -70,3 +70,17 @@ main {
 #clickUpgrade {
     background-color:orange;
 }
+
+#autoClickUpgrades {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#autoClickAmountUpgrade {
+    background-color: darkorange;
+}
+
+#autoClickDelayUpgrade {
+    background-color: yellow;
+}

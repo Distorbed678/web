@@ -1,7 +1,7 @@
-import { Upgrade } from "./upgrade.js";
-import { gamestate } from "../gamestate.js";
+import { Upgrade } from "../upgrade.js";
+import { gamestate } from "../../gamestate.js";
 
-export class ClickUpgrade extends Upgrade {
+export class AutoClickAmountUpgrade extends Upgrade {
     constructor(upgradeContainerName, cost) {
         super(upgradeContainerName, cost);
     }
@@ -9,7 +9,9 @@ export class ClickUpgrade extends Upgrade {
     onClick() {
         if (gamestate.score >= this._upgradeCost) {
             gamestate.score -= this._upgradeCost;
-            gamestate.incrementCount*=2;
+
+            gamestate.autoClickAmount += 1;
+
             this._upgradeCost *= 2;
         }
     }
